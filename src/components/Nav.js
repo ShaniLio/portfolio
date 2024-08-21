@@ -51,7 +51,7 @@ const Nav = () => {
             activeClass="active"
             smooth = {[true]}
             spy = {[true]}
-          
+            isDynamic={true}
             className="cursor-pointer w-[60] h-[60]  flex justify-center items-center"
           >
             <BsChatSquare />
