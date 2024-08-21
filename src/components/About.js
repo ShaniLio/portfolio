@@ -41,7 +41,7 @@ const About = () => {
               components and integrate third-party APIs for seamless user
               experiences
             </p>
-            <div className="flex gap-x-6 lg:gap-x-14 mb-12">
+            <div className="flex gap-x-14 lg:gap-x-14 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient">
                   {inView ? <CountUp duration={5} start={0} end={3} /> : null}
