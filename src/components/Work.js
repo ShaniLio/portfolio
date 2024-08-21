@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import img1 from "../assets/portfolio-img1.png";
 import img2 from "../assets/portfolio-img2.png";
 import img3 from "../assets/portfolio-img3.png";
+import img4 from "../assets/portfolio-img4.png";
 
 const Work = () => {
   return (
@@ -83,8 +84,8 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
               {/* img */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
+                className="group-hover:scale-125 max-w-[23.2rem] transition-all duration-500"
+                src={img4}
                 alt="Portfolio project"
               />
               {/* role */}
