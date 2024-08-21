@@ -84,7 +84,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
               {/* img */}
               <img
-                className="group-hover:scale-125 max-w-[23.2rem] transition-all duration-500"
+                className="group-hover:scale-125 lg:max-w-[23.2rem] transition-all duration-500"
                 src={img4}
                 alt="Portfolio project"
               />
