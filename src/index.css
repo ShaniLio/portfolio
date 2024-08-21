@@ -37,7 +37,7 @@
 .active {
   color: #fff;
   padding: 1rem;
-  border-radius: 100%;
+  border-radius: 30%;
 }
 
 @layer base {
@@ -51,7 +51,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-2xl font-primary text-white font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
