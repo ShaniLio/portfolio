@@ -38,7 +38,7 @@ const Contact = () => {
               <h4 className="text-xl font-bold uppercase text-gradient mb-2 tracking-wide">
                 Get in Touch
               </h4>
-              <h2 className="text-[35px] text-gradient lg:text-[60px] leading-none mb-12">
+              <h2 className="text-[35px] h-[76px] text-gradient lg:text-[60px] leading-none mb-12">
                 Let's Work <br />
                 Together{" "}
               </h2>
