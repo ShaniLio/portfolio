@@ -41,9 +41,9 @@ const About = () => {
               components and integrate third-party APIs for seamless user
               experiences
             </p>
-            <div className="flex gap-x-14 lg:gap-x-14 mb-12">
+            <div className="flex pt-2 gap-x-14 lg:gap-x-14 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient">
+                <div className="text-[40px] pt-2 font-tertiary text-gradient">
                   {inView ? <CountUp duration={5} start={0} end={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
@@ -52,7 +52,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient">
+                <div className="text-[40px] pt-2 font-tertiary text-gradient">
                   {inView ? <CountUp duration={5} start={0} end={8} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
