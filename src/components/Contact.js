@@ -1,8 +1,8 @@
-// import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+
 const Contact = () => {
   const form = useRef();
 
@@ -10,22 +10,21 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_yd5blzp', 'template_40o1bkl', form.current, {
-        publicKey: 'hjD3KyMI67F7luEmp',
-      })
+      .sendForm('service_yd5blzp', 'template_40o1bkl', form.current, 'hjD3KyMI67F7luEmp')
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current.reset(); // Clears the form fields after success
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
+
   return (
-    <section className=" py-16 lg:section" id="contact">
-      <div
-      className="container mx-auto">
+    <section className="py-16 lg:section" id="contact">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
@@ -40,7 +39,7 @@ const Contact = () => {
                 Get in Touch
               </h4>
               <h2 className="text-[35px] text-gradient lg:text-[60px] leading-none mb-12">
-                Lets Work <br />
+                Let's Work <br />
                 Together{" "}
               </h2>
             </div>
@@ -56,23 +55,23 @@ const Contact = () => {
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 p-6 items-start"
           >
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent  transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent transition-all"
               type="text"
               placeholder="Your Name"
               name="user_name"
             />
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent  transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent transition-all"
               type="email"
               placeholder="Your Email"
               name="user_email"
             />
             <textarea
-              className="bg-transparent border-b py-10 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent  transition-all resize-none mb-12"
+              className="bg-transparent border-b py-10 outline-none w-full placeholder:text-gradient focus:border-accent hover:border-accent transition-all resize-none mb-12"
               placeholder="Your Message"
               name="message"
             ></textarea>
-            <button type="submit" value="send" className="btn btn-lg">
+            <button type="submit" className="btn btn-lg">
               Send Message
             </button>
           </motion.form>
@@ -81,4 +80,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;
